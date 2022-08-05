@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container{
+  background: linear-gradient(135deg, #850c62, #f80759);
+  width: 100%;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+
+}
+.app-wrapper{
+  background-color: #fff;
+  min-width: 350px;
+  min-height: 520px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.title{
+  color: #961842;
+  text-align: center;
+  margin: 50px 0px 40px 0px;
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.name,
+.email,
+.password {
+  margin: 20px;
+  color: #301f1f;
+  font-size: 16px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.password{
+  margin-bottom: 40px;
+
+}
+.input{
+  height: 32px;
+  font-size: 20px;
+  outline: none;
+  width: 100%;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom-style: 2px solid black;
+  margin-bottom: 10px;
+}
+.error{
+  color: red;
+}
+.submit{
+  display: flex;
+  text-transform: uppercase;
+  font-size: 20px;
+  border-radius: 25px;
   color: white;
-}
+  padding: 10px 60px;
+  background: linear-gradient(to right, #ab1dcf, #a8053c);
+  box-shadow: rgba(0,0,0,0.3) 0px 19px 38px,
+  rgba(0,0,0,0.22) 0px 15px 12px;
+  margin: auto;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submit:hover{
+  background: linear-gradient(to right, #5f2d6b, #7a4d5c);
+}
+button:active{
+  transform: translateY(2px);
+}
+.form-success{
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
+  min-width: 370px;
+  color: #f80759;
 }
